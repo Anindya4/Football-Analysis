@@ -1,3 +1,3 @@
 from .video_utils import read_video, save_video
 
-from .bbox_utlis import center_of_bbox, width_of_bbox
+from .bbox_utlis import get_center_of_bbox, get_bbox_width, measure_distance

@@ -2,7 +2,7 @@ from ultralytics import YOLO
 
 model = YOLO('models/best_v8x.pt')
 
-results = model.predict('D:\Programing\Football-Analysis\Input\input_3.mp4', save= True, conf=0.1)
+results = model.predict('D:\Programing\Football-Analysis\Input\input_4.mp4', save= True, conf=0.1)
 print(results[0])
 print("..................................................................................................................")
 

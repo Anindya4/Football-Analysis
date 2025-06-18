@@ -1,1 +1,1 @@
-from .team_assigner import TeamAssign
+from .team_assigner import TeamAssigner
