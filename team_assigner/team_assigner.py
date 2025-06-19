@@ -10,7 +10,7 @@ class TeamAssigner:
         image_2d = image.reshape(-1,3)
 
         # Preform K-means with 2 clusters
-        kmeans = KMeans(n_clusters=2, init="k-means++",n_init=1)
+        kmeans = KMeans(n_clusters=2, init="k-means++",n_init=10)
         kmeans.fit(image_2d)
 
         return kmeans
@@ -65,8 +65,12 @@ class TeamAssigner:
         team_id = self.kmeans.predict(player_color.reshape(1,-1))[0]
         team_id+=1
 
-        if player_id ==91:
-            team_id=1
+        if player_id == 20: # Fixed one player color mapping (hardcoded)
+            team_id = 2
+        elif player_id in {97, 104, 108, 127, 128, 132, 151}: #Fixed the goalkeeper team assignment
+            team_id = 1
+
+        
 
         self.player_team_dict[player_id] = team_id
 
