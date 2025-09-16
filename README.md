@@ -73,6 +73,6 @@ The main objectives of this project are:
   * Incorporate temporal context (RNNs/Transformers).
   * Optimize inference for ⌚ real-time deployment.
 
-## **✅ Conclusion **
+## **✅ Conclusion**
 The Football Game Analysis project demonstrates how **computer vision + machine learning** can revolutionize football analytics ⚽📊. Using **YOLOv5 for detection, K-Means for team separation, and ball tracking for possession**, the system produces reliable and interpretable results.
 This project paves the way for professional coaching tools, broadcasting enhancements, and fan engagement systems 🚀. With continued improvements in tracking, detection, and efficiency, it can evolve into a comprehensive real-time match analysis platform 🔥.
