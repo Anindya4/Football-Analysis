@@ -66,9 +66,9 @@ class TeamAssigner:
         team_id+=1
 
         if player_id == 20: # Fixed one player color mapping (hardcoded)
-            team_id = 2
+            team_id = 2  #-> Team Green
         elif player_id in {97, 104, 108, 127, 128, 132, 151}: #Fixed the goalkeeper team assignment 
-            team_id = 1
+            team_id = 1   #-> Team white
 
         
 
